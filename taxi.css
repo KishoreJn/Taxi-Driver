@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family:sans-serif;
+}
+header{
+    position: fixed;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 25px 10px;
+    z-index: 1000;
+    justify-content: space-around;
+}
+span{
+    color: whitesmoke;
+}
+ul a{
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.navbar a{
+    display: inline-block;
+    margin: 0 20px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight:700;
+    transition: 1s;
+}
+.navbar2 a{
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 30px 15px 20px;
+    border-radius: 20px 0;
+    margin: 0 30px;
+    background-color: yellow;
+    transition: 1s;
+}
+.navbar2 i{
+    color: whitesmoke;
+    font-size:large;
+}
+.navbar a:hover{
+    scale: 1.2;
+    cursor: pointer;
+    color: yellow;
+}
+.navbar2 a:hover{
+    scale: 2.2;
+    cursor: pointer;
+    color: yellow;
+    background-color: whitesmoke;
+}
+
+
+
+section{
+    padding-top: 30px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.homeimg img{
+    width: 100%;
+}
+.homecontect{
+    font-size: larger;
+    color: whitesmoke;
+}
+.homecontect h3{
+    font-size: 14px;
+    font-weight: 900;
+    color: yellow;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+.hometext h1{
+    font-size:50px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+.count{
+    color:yellow;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: xx-large;
+}
+.infotext{
+    color: whitesmoke;
+    font-weight: 300;
+    font-size:x-large;
+}
+.infobox{
+    position: absolute;
+    background-color: rgb(73, 69, 69);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding:35px 35px;
+    right:85px;
+    top:470px;
+}
+.socialicons{
+    position: absolute;
+    top:55%;
+    left:5%;
+}
+.socialicons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition:1s;
+}
+.socialicons i:hover{
+    scale: 1.2;
+    color: yellow;
+}
+.arrow{
+    position: absolute;
+    top:85%;
+    right:5%;
+}
+.arrow i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    height: 30px;
+    width: 50px;
+    padding:10px;
+    border-radius: 100px;
+    background-color: yellow;
+    transition: 1s;
+}
+.arrow i:hover{
+    color: yellow;
+    background: transparent;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.aboutimg img{
+    width: 55%;
+    height: 97%;
+    padding-top: 30px;
+    padding-left:30%;
+}
+.abouttext{
+    padding-top: 7%;
+}
+.abouttext h2{
+    font-size: xx-large;
+}
+.abouttext h3{
+    font-size: x-large;
+}
+.abouttext p{
+    width: 80%;
+    font-size: larger;
+    line-height:30px;
+}
+.abouttext a{
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: black;
+    background-color: yellow;
+    border: 2px solid;
+    text-decoration: none;
+    transition: .1s;
+}
+.abouttext a:hover{
+    color: yellow;
+    background-color: black;
+}
+.abouttext i{
+    padding-right: 15px;
+}
+.service{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.customers{
+    display: flex;
+}
+.serviceheading{
+    text-align: center;
+    line-height: 50px;
+}
+.serviceheading h2{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.serviceheading h3{
+    font-size: x-large;
+}
+.customers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap:12rem;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 50px;
+    text-align: center;
+}
+.client1{
+    border: 2px transparent;
+    box-shadow: 0px 3px 3px black;
+    transition: 1s;
+}
+.client1 p{
+    padding: 8px;
+}
+.client1:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.features{
+    padding-bottom: 40px;
+}
+.featurecontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.featuretext{
+    text-align: center;
+    padding-bottom: 5%;
+    line-height: 50px;
+}
+.featuretext h2{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.featuretext h3{
+    font-size: x-large;
+}
+.featureleft{
+    padding:10px;
+    width:45%;
+    padding-top: 30%;
+    padding-left: 30%;
+}
+.featureright{
+    padding: 10px;
+    width:45%;
+    padding-top: 28%;
+    padding-left: 15%;
+}
+.featureimg img{
+    width: 70%;
+    margin-left: 14%;
+    margin-right: 10%;
+}
+.lefttext{
+    padding: 10px;
+    width: 100%;
+    line-height:24px;
+    box-shadow: 0px 3px 2px black;
+    transition: 1s;
+}
+.lefttext i{
+    font-size:20px;
+    background-color: yellow;
+    width: 25px;
+}
+.righttext{
+    padding: 10px;
+    width: 100%;
+    line-height:24px;
+    box-shadow: 0px 3px 2px black;
+    transition: 1s;
+}
+.righttext i{
+    font-size:20px;
+    background-color: yellow;
+    width: 25px;
+}
+.righttext:hover{
+    scale: 1.2;
+    background-color: black;
+    color: whitesmoke;
+}
+.lefttext:hover{
+    scale: 1.2;
+    background-color: black;
+    color: whitesmoke;
+}
+footer{
+    padding: 0% 11% 4% 11% ;
+    color: whitesmoke;
+    background-image: url(imgs/black.jpg);
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap:4rem;
+    padding-top: 40px;
+}
+.foothead img{
+  width: 40%;
+  margin-top: 25px;
+  border-radius: 8%;
+}
+.footcontent{
+    display: flex;
+    flex-direction: column;
+}
+.footcontent h3{
+    padding-bottom: 30px;
+    font-size: x-large;
+}
+.footcontent a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: medium;
+    transition: 1s;
+}
+.footcontent a:hover{
+    scale: 1.1;
+    color: gray;
+}
+.copyright{
+    display: flex;
+    width: 190%;
+    transition: 1s;
+}
+.copyright:hover{
+    color: gray;
+    cursor: pointer;
+}
+span{
+    color: yellow;
+}
